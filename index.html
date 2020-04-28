@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio - Erik Hanson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <section id="navSection">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#projectSection">Projects</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <header>
+        <section id="homeSection">
+            <h1>Welcome!</h1>
+            <p>Thank you for taking the time to view my portfolio!</p>
+        </section>
+    </header>
+
+    <section id="aboutSection">
+        <h2>About me</h2>
+        <p>I am a senior Computer Science student at Portland State University.
+            I also have some work experience in the industry which can be seen in my
+            resume section of this site. Aside from programming/computer science related
+            things I love to mountain bike and hike trails. I enjoy going to new places and learning
+            new things. I also like to solve puzzles like rubiks cubes.
+        </p>
+    </section>
+
+    <section id="projectSection">
+        <h2>My Projects</h2>
+        <!--
+      <ul>
+        <li>CS 300 Frupal Game</li>
+        <li>Capstone StopSpot Data Pipeline</li>
+        <li>Arduino Music Visualizer (Planned)</li>
+      </ul>
+    -->
+        <div id="projectsGrid">
+            <div class="project">
+                <h2>CS-300 Frupal Game</h2>
+                <p>Insert description here</p>
+            </div>
+
+            <div class="project">
+                <h2>Capstone Project</h2>
+                <p>Insert description here</p>
+            </div>
+
+            <div class="project">
+                <h2>Arduino Music Visualizer(planned)</h2>
+                <p>Insert description here</p>
+            </div>
+        </div>
+    </section>
+    <section id="contactSection">
+        <h2>Contact Me</h2>
+        <div class="container" id="form" role="main">
+            <div class="card col-9 mx-auto">
+                <div class="card-body">
+                    <h1>Contact Form</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="text" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Submit your message:</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="signUpCheck">
+                            <label class="form-check-label" for="signUpCheck">
+                                Sign up for the newsletter
+                            </label>
+                        </div>
+                        <div class="row justify-content-center" id="buttonContainer">
+                            <button type="button" class="btn btn-primary btn-block m-1">Submit</button>
+                            <button type="button" class="btn btn-secondary btn-block m-1">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="contactImages">
+            <h2>Socials</h2>
+            <a href="https://github.com/Erik-Hanson"><img src="GitHub-Mark-64px.png" alt="GitHubLogo"></a>
+            <a href="https://www.linkedin.com/in/erik-hanson-57275a180/"><img src="linkedin-64.ico" alt="LinkedInLogo"
+                    style="height: 64px;width: 64px;"></a>
+        </div>
+    </section>
+
+    <footer>Author: Erik Hanson</footer>
+</body>
+
+</html>

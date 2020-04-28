@@ -1,0 +1,162 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    color: #ecffff;
+    background-color: #7dc2ad;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+/*
+#navSection {
+    margin: auto;
+    width: 50%;
+}
+
+#navSection nav {
+    text-align: center;
+}
+
+#navSection ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #e27d5f;
+    overflow: hidden;
+}
+
+#navSection ul li {
+    white-space: nowrap;
+}
+
+#navSection li {
+    display: inline-block;
+}
+
+#navSection li a {
+    display: block;
+    color: #f2fcf9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navSection li a:hover {
+    background-color: #85cdca;
+}
+*/
+
+#navSection {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    width: 10%;
+    background-color: #000000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#navSection ul {
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#navSection li a {
+    display: block;
+    color: #f2fcf9;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    padding-bottom: 14px;
+    text-decoration: none;
+}
+
+#navSection a:active {
+    color: cyan;
+}
+
+#homeSection {
+    height: 100vh;
+}
+
+#homeSection h1 {
+    font-size: 36px;
+}
+
+#homeSection p {
+    font-size: 24px;
+}
+
+#aboutSection {
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Media query for greater than or equal to 1301px */
+@media (min-width:1301px) {
+    #projectsGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Media query for less than or equal to 1300px */
+@media (max-width:1300px) {
+    #projectsGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+#projectSection {
+    height: 100vh;
+}
+
+#projectSection h2 {
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    background-color: #e27d5f;
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 20px;
+}
+
+#contactSection {
+    text-align: center;
+    height: 95vh;
+}
+
+#form {
+    color: black;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#contactImages img {
+    display: inline;
+    padding-right: 8px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}
