@@ -5,7 +5,7 @@ html {
 body {
     font-size: 16px;
     color: #ecffff;
-    background-color: #7dc2ad;
+    /*background-color: #7dc2ad;*/
     margin-left: 0px;
     margin-top: 0px;
 }
@@ -89,6 +89,9 @@ header {
 
 #homeSection {
     height: 100vh;
+    /*background-color: #1e80f1;*/
+    background-image: url("circle-blues.png");
+    background-attachment: fixed;
 }
 
 #homeSection h1 {
@@ -101,9 +104,15 @@ header {
 
 #aboutSection {
     margin: auto;
-    width: 50%;
+    /*width: 50%;*/
     height: 100vh;
     text-align: center;
+    /*background-color: #3d4756;*/
+    background-color: #000043;
+}
+
+#aboutTextSection {
+    width: 50%;
 }
 
 /* Media query for greater than or equal to 1301px */
@@ -124,6 +133,8 @@ header {
 
 #projectSection {
     height: 100vh;
+    /*background-color: #a1acbd;*/
+    background-color: #000043;
 }
 
 #projectSection h2 {
@@ -142,6 +153,7 @@ header {
 #contactSection {
     text-align: center;
     height: 95vh;
+    background-color: #000043;
 }
 
 #form {
@@ -159,4 +171,5 @@ footer {
     font-size: 12px;
     text-align: center;
     padding-top: 10px;
+     background-color: #75394f;
 }
