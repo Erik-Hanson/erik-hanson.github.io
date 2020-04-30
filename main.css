@@ -60,11 +60,12 @@ header {
     padding: 0;
     top: 0px;
     width: 8%;
-    background-color: #000000;
+    background-color: #363942;
     position: fixed;
     height: 100%;
     overflow: auto;
     display: block;
+    font-weight: bold;
 }
 
 #navSection ul {
@@ -159,7 +160,7 @@ header {
 
 .project {
     display: inline-block;
-    background-color: #75394F;
+    background-color: #363942;
     text-align: left;
     border-radius: 5px;
     padding: 50px;
@@ -191,5 +192,5 @@ footer {
     font-size: 12px;
     text-align: center;
     padding-top: 10px;
-     background-color: #75394f;
+     background-color: #363942;
 }
