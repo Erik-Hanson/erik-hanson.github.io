@@ -132,7 +132,7 @@ header {
 
 #homeSection {
   height: 100vh;
-  background-image: url("circle-blues.png");
+  background-image: url("img/circle-blues.png");
   background-attachment: fixed;
   padding-top: 20%;
   font-weight: bold;
@@ -274,6 +274,12 @@ header {
   color: black;
   text-align: left;
   padding-bottom: 20px;
+}
+
+@media (max-width: 450px) {
+  #form h1 {
+    font-size: 34px;
+  }
 }
 
 #contactImages {
