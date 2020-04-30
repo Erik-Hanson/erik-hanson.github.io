@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  height: 100%;
   font-size: 16px;
   color: #ecffff;
   margin-left: 0px;
@@ -13,44 +14,7 @@ header {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
-  #navSection {
-    margin: 0;
-    padding: 0;
-    top: 0px;
-    width: 8%;
-    background-color: #363942;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    display: block;
-    font-weight: bold;
-  }
-
-  #navSection ul {
-    list-style-type: none;
-    padding: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #navSection li a {
-    display: block;
-    color: #f2fcf9;
-    text-align: center;
-    padding-bottom: 14px;
-    text-decoration: none;
-    outline: none;
-  }
-
-  #navSection a:active {
-    color: cyan;
-  }
-}
-
-@media (max-width: 414px) {
+@media (max-width: 767px) {
   #navSection {
     width: 100%;
     background-color: #363942;
@@ -92,6 +56,80 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  #navSection {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    width: 9%;
+    background-color: #363942;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    font-weight: bold;
+  }
+
+  #navSection ul {
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #navSection li a {
+    display: block;
+    color: #f2fcf9;
+    text-align: center;
+    padding-bottom: 14px;
+    text-decoration: none;
+    outline: none;
+  }
+
+  #navSection li a:hover {
+    background-color: #000043;
+  }
+}
+
+@media (min-width: 1024px) {
+  #navSection {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    width: 8%;
+    background-color: #363942;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    font-weight: bold;
+  }
+
+  #navSection ul {
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #navSection li a {
+    display: block;
+    color: #f2fcf9;
+    text-align: center;
+    padding-bottom: 14px;
+    text-decoration: none;
+    outline: none;
+  }
+
+  #navSection li a:hover {
+    background-color: #000043;
+  }
+}
+
 #homeSection {
   height: 100vh;
   background-image: url("circle-blues.png");
@@ -100,28 +138,78 @@ header {
   font-weight: bold;
 }
 
-#homeSection h1 {
-  font-size: 56px;
+@media (max-width: 767px) {
+  #homeSection h1 {
+    font-size: 50px;
+  }
+
+  #homeSection p {
+    font-size: 26px;
+  }
 }
 
-#homeSection p {
-  font-size: 36px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  #homeSection {
+    padding-left: 7%;
+  }
+
+  #homeSection h1 {
+    font-size: 52px;
+  }
+
+  #homeSection p {
+    font-size: 28px;
+  }
 }
 
-#aboutSection {
-  padding-left: 10%;
-  padding-top: 20%;
-  height: 100vh;
-  background-color: #000043;
+@media (min-width: 1024px) {
+  #homeSection {
+    padding-left: 6%;
+  }
+
+  #homeSection h1 {
+    font-size: 56px;
+  }
+
+  #homeSection p {
+    font-size: 36px;
+  }
 }
 
-#aboutSection h2 {
-  font-size: 56px;
+  #aboutSection {
+    padding-left: 10%;
+    padding-top: 20%;
+/*    height: 100vh;*/
+    padding-bottom: 10%;
+    background-color: #000043;
+  }
+
+@media (max-width: 767px) {
+    #aboutSection {
+        padding-left: 0;
+    }
+
+  #aboutSection h2 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  #aboutTextSection {
+    margin: auto;
+    width: 60%;
+    font-size: 24px;
+  }
 }
 
-#aboutTextSection {
-  width: 60%;
-  font-size: 24px;
+@media (min-width: 1024px) {
+  #aboutSection h2 {
+    font-size: 56px;
+  }
+
+  #aboutTextSection {
+    width: 60%;
+    font-size: 24px;
+  }
 }
 
 #projectsGrid {
@@ -146,7 +234,8 @@ header {
 }
 
 #projectSection {
-  height: 100vh;
+  /*height: 100vh;*/
+  padding-bottom: 10%;
   padding-top: 150px;
   background-color: #000043;
 }
@@ -172,7 +261,7 @@ header {
 
 #contactSection {
   text-align: center;
-  height: 100%; /* Weirdly, viewport was breaking it here so I had to do percentage*/
+  /*height: auto; Weirdly, viewport was breaking it here so I had to do percentage*/
   background-color: #000043;
 }
 
@@ -188,6 +277,7 @@ header {
 
 #contactImages {
   margin-top: 150px;
+  padding-bottom: 5%;
 }
 
 #contactImages img {
