@@ -179,7 +179,6 @@ header {
   #aboutSection {
     padding-left: 10%;
     padding-top: 20%;
-/*    height: 100vh;*/
     padding-bottom: 10%;
     background-color: #000043;
   }
@@ -196,7 +195,19 @@ header {
 
   #aboutTextSection {
     margin: auto;
+    text-align: center;
     width: 60%;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #aboutSection h2 {
+    font-size: 56px;
+  }
+
+  #aboutTextSection {
+    width: 75%;
     font-size: 24px;
   }
 }
