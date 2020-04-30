@@ -1,19 +1,20 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-size: 16px;
-    color: #ecffff;
-    margin-left: 0px;
-    margin-top: 0px;
+  font-size: 16px;
+  color: #ecffff;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
-#navSection {
+@media (min-width: 1024px) {
+  #navSection {
     margin: 0;
     padding: 0;
     top: 0px;
@@ -24,135 +25,179 @@ header {
     overflow: auto;
     display: block;
     font-weight: bold;
-}
+  }
 
-#navSection ul {
+  #navSection ul {
     list-style-type: none;
     padding: 0px;
     position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-#navSection li a {
+  #navSection li a {
     display: block;
     color: #f2fcf9;
     text-align: center;
     padding-bottom: 14px;
     text-decoration: none;
     outline: none;
+  }
+
+  #navSection a:active {
+    color: cyan;
+  }
 }
 
-#navSection a:active {
-    color: cyan;
+@media (max-width: 414px) {
+  #navSection {
+    width: 100%;
+    background-color: #363942;
+    font-weight: bold;
+  }
+
+  #navSection nav {
+    text-align: center;
+  }
+
+  #navSection ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  #navSection ul li {
+    white-space: nowrap;
+  }
+
+  #navSection li {
+    display: inline-block;
+  }
+
+  #navSection li a {
+    display: block;
+    color: #f2fcf9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: none;
+  }
+
+  #navSection li a:hover {
+    background-color: #000043;
+  }
 }
 
 #homeSection {
-    height: 100vh;
-    background-image: url("circle-blues.png");
-    background-attachment: fixed;
-    padding-top: 20%;
-    font-weight: bold;
+  height: 100vh;
+  background-image: url("circle-blues.png");
+  background-attachment: fixed;
+  padding-top: 20%;
+  font-weight: bold;
 }
 
 #homeSection h1 {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 #homeSection p {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 #aboutSection {
-    padding-left: 10%;
-    padding-top: 20%;
-    height: 100vh;
-    background-color: #000043;
+  padding-left: 10%;
+  padding-top: 20%;
+  height: 100vh;
+  background-color: #000043;
 }
 
 #aboutSection h2 {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 #aboutTextSection {
-    width: 60%;
-    font-size: 24px;
+  width: 60%;
+  font-size: 24px;
 }
 
 #projectsGrid {
-    padding-left: 10%;
-    width: 80%
+  padding-left: 10%;
+  width: 80%;
 }
 
 /* Media query for greater than or equal to 1301px */
-@media (min-width:1301px) {
-    #projectsGrid {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+@media (min-width: 1301px) {
+  #projectsGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 /* Media query for less than or equal to 1300px */
-@media (max-width:1300px) {
-    #projectsGrid {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+@media (max-width: 1300px) {
+  #projectsGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 #projectSection {
-    height: 100vh;
-    padding-top: 150px;
-    background-color: #000043;
+  height: 100vh;
+  padding-top: 150px;
+  background-color: #000043;
 }
 
 #projectsHeading {
-    /*text-align: center;*/
-    padding-left: 10%;
-    font-size: 56px;
+  /*text-align: center;*/
+  padding-left: 10%;
+  font-size: 56px;
 }
 
 .project {
-    display: inline-block;
-    background-color: #363942;
-    text-align: left;
-    border-radius: 5px;
-    padding: 50px;
-    margin: 20px 20px 20px 0px;
+  display: inline-block;
+  background-color: #363942;
+  text-align: left;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 20px 20px 20px 0px;
 }
 
 .project h2 {
-    padding-left: 0%;
+  padding-left: 0%;
 }
 
 #contactSection {
-    text-align: center;
-    height: 95vh;
-    background-color: #000043;
+  text-align: center;
+  height: 100%; /* Weirdly, viewport was breaking it here so I had to do percentage*/
+  background-color: #000043;
 }
 
 #contactSection h2 {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 #form {
-    color: black;
-    text-align: left;
-    padding-bottom: 20px;
+  color: black;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 #contactImages {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 #contactImages img {
-    display: inline;
-    padding-right: 8px;
+  display: inline;
+  padding-right: 8px;
 }
 
 footer {
-    font-size: 12px;
-    text-align: center;
-    padding-top: 10px;
-     background-color: #363942;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #363942;
 }
