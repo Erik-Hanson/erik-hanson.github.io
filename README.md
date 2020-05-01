@@ -2,7 +2,7 @@
 
 Repository for my portfolio project for CS-465P at PSU.
 
-Porfolio can be seen here: https://erik-hanson.github.io/hansonerik.github.io/
+Porfolio can be seen here:  https://erik-hanson.github.io/
 
 Tools used:
 
@@ -21,3 +21,4 @@ Other resources:
  - https://www.toptal.com/designers/subtlepatterns/page/3/
  - https://mycolor.space/?hex=%235780AE&sub=1
  - https://dillinger.io
+ 
