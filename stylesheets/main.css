@@ -275,6 +275,14 @@ header {
   .project {
     width: 90%;
   }
+
+}
+
+@media (max-width: 414px) {
+  #projectsGrid {
+    margin: auto;
+    padding-left: 0px;
+  }
 }
 
 .project h2 {
@@ -283,7 +291,6 @@ header {
 
 #contactSection {
   text-align: center;
-  /*height: auto; Weirdly, viewport was breaking it here so I had to do percentage*/
   background-color: #000043;
 }
 
