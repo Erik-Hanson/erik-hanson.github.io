@@ -132,7 +132,7 @@ header {
 
 #homeSection {
   height: 100vh;
-  background-image: url("img/circle-blues.png");
+  background-image: url("../img/circle-blues.png");
   background-attachment: fixed;
   padding-top: 20%;
   font-weight: bold;
