@@ -54,6 +54,10 @@ header {
   #navSection li a:hover {
     background-color: #000043;
   }
+
+  a:focus {
+    color: cyan;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -91,6 +95,10 @@ header {
   #navSection li a:hover {
     background-color: #000043;
   }
+
+  a:focus {
+    color: cyan;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -127,6 +135,10 @@ header {
 
   #navSection li a:hover {
     background-color: #000043;
+  }
+
+  a:focus {
+    color: cyan;
   }
 }
 
@@ -251,6 +263,15 @@ header {
 }
 
 @media (max-width: 767px) {
+  #projectsHeading {
+    text-align: center;
+    padding: 0;
+  }
+
+  #projectsGrid {
+    margin: auto;
+  }
+
   .project {
     width: 90%;
   }
@@ -293,7 +314,7 @@ header {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   padding-top: 10px;
   background-color: #363942;

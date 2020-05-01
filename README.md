@@ -1,6 +1,3 @@
-# My Portfolio!
-
-Repository for my portfolio project for CS-465P at PSU.
 
 Porfolio can be seen here: https://erik-hanson.github.io/hansonerik.github.io/
 
@@ -15,3 +12,8 @@ Tutorials used
  - JQuery Tutorials on animations: https://api.jquery.com/
  - Translate docs (used to center section links in nav bar vertically): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
 
+Other resources:
+
+ - https://www.toptal.com/designers/subtlepatterns/page/3/
+ - https://mycolor.space/?hex=%235780AE&sub=1
+ - https://dillinger.io
