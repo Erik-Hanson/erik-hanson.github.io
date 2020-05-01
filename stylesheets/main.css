@@ -236,10 +236,23 @@ header {
 }
 
 #projectsGrid {
-  padding-left: 10%;
   width: 80%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+@media (max-width: 460px) {
+  #projectsGrid {
+    margin: auto;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 461px) {
+  #projectsGrid {
+    padding-left: 10%;
+  }
 }
 
 #projectSection {
@@ -276,13 +289,6 @@ header {
     width: 90%;
   }
 
-}
-
-@media (max-width: 414px) {
-  #projectsGrid {
-    margin: auto;
-    padding-left: 0px;
-  }
 }
 
 .project h2 {
