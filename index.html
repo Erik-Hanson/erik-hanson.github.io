@@ -2,104 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio - Erik Hanson</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erik Hanson Portfolio Website</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <section id="navSection">
-        <nav>
-            <ul>
-                <li><a href="#homeSection" class="navLink">Home</a></li>
-                <li><a href="#aboutSection" class="navLink">About</a></li>
-                <li><a href="#projectSection" class="navLink">Projects</a></li>
-                <li><a href="#contactSection" class="navLink">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Erik Hanson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <header>
-        <section id="homeSection">
-            <h1>Welcome!</h1>
-            <p>Thank you for taking the time to view my portfolio!</p>
-        </section>
-    </header>
-
-    <section id="aboutSection">
-        <h2>About me</h2>
-        <div id="aboutTextSection">
-        <p>I am a senior Computer Science student at Portland State University.
-            I also have some work experience in the industry which can be seen on my 
-            linkedin which is at the bottom of this site. Aside from programming/computer science related
-            things I love to mountain bike and hike trails. I enjoy going to new places and learning
-            new things. I also like to solve puzzles like rubiks cubes.
-        </p>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="active nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+          </ul>
         </div>
-    </section>
-    
-    <section id="projectSection">
-        <h2 id="projectsHeading">My Projects</h2>
-        <div id="projectsGrid">
-            <div class="project">
-                <h2>CS-300 Space Hunt Game</h2>
-                <p>A basic browser game made for CS-300 at PSU.</p>
-            </div>
+      </div>
+    </nav>
+  </header>
 
-            <div class="project">
-                <h2>StopSpot Data Pipeline</h2>
-                <p>A data pipeline used to flag stop data for CTran.</p>
-            </div>
+  <div id="home">
+    <div class="landing-text pt-5">
+      <h1 class="display-1">Erik Hanson</h1>
+      <!--<h3 class="display-4">Welcome to my web portfolio!</h3>-->
+    </div>
+  </div>
 
-            <div class="project">
-                <h2>Arduino Music Visualizer(planned)</h2>
-                <p>This is a planned project in which I want to use an arduino to
-                    "simulate" music by using LEDs.
-                </p>
-            </div>
+  <div class="padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="imgs/coffee.jpg">
         </div>
-    </section>
-    <section id="contactSection">
-        <h2>Contact Me</h2>
-        <div class="container" id="form" role="main">
-            <div class="card col-9 mx-auto">
-                <div class="card-body">
-                    <h1>Contact Form</h1>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="text" class="form-control" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Submit your message:</label>
-                            <textarea class="form-control" id="message" rows="4"></textarea>
-                        </div>
-                        <div class="row justify-content-center" id="buttonContainer">
-                            <button type="button" class="btn btn-primary btn-block m-1">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <div class="col text-center">
+          <h2>About Me</h2>
+          <p class="lead">At a high level I'm a guy that likes to make things to make life more easy. I enjoy learning
+            new things and taking on new challenges. Topics I enjoy in computer science/software engineering are, data
+            structures and
+            algorithms, programming languages, databases, fullstack development, docker, and version control. When I'm
+            not programming
+            I enjoy spending my time mountain biking or hiking with my dog Rooster!
+          </p>
         </div>
-        <div id="contactImages">
-            <h2>Socials</h2>
-            <a href="https://github.com/Erik-Hanson"><img src="img/GitHub-Mark-64px.png" alt="GitHubLogo"></a>
-            <a href="https://www.linkedin.com/in/erik-hanson-57275a180/"><img src="img/linkedin-64.ico" alt="LinkedInLogo"
-                    style="height: 64px;width: 64px;"></a>
-        </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <footer>Author: Erik Hanson</footer>
+  <div class="padding text-center" id="projects">
+    <h2>Projects</h2>
+    <div class="container pt-2">
+      <div class="row">
+        <div class="col-sm">
+          <h4>WorkSet</h4>
+          <p>A fullstack to-do application that me and my friend worked on. We used HTML, Bootstrap,
+            Javascript, React, and
+            Firebase to complete this project. It does all of the things that you would expect a to-do app to do. This
+            was the first real
+            project I've worked on with another person and it was a fun experience working together with Davis on this
+            project.
+          </p>
+        </div>
+        <div class="col-sm">
+          <h4>MTBLogger</h4>
+          <p>A simple web application that I wanted to use for logging
+            information and thoughts I had about specific trails I've ridden. For technologies I used ASP.NET, C#,
+            Entity Framework, and
+            SQL Server. The intention of this project was to introduce me to ASP.NET MVC. For the front end HTML, CSS,
+            Bootstrap, and font-awesome
+            were used.
+          </p>
+        </div>
+        <div class="col-sm">
+          <h4>Capstone Project</h4>
+          <p>The goal of this project was to create a data pipeline for CTRAN for their stop data. It was intended to
+            discover potential issues
+            with stop data. This project was done in a group of 8 people me included. I primarly focused on
+            dockerization and automation for this
+            project. I also worked with the logger that we had and early implementation of a checkpoint system we
+            implemented into the project.
+            Technologies we used on this project were Python, Pandas, PostgreSQL, Docker, and Bash.
+          </p>
+        </div>
+        <!--
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>Arduino Project</h4>
+          <p>I wanted to create a arduno project for the sole premise of getting experience with integrating hardware
+            and code. This is something
+            that we are not typically taught in computer science cirriculum and thus I wanted to gain some knowledge
+            about it on my own time.
+          </p>
+        </div>
+      -->
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed">
+  </div>
+
+  <div class="padding" id="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Resume</h2>
+          <p class="lead">A copy of my <a href="/imgs/Resume.pdf" target="_blank">resume</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col">
+        <h3>Connect</h3>
+        <a href="https://www.linkedin.com/in/erik-hanson-57275a180/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/Erik-Hanson" target="_blank" class="fa fa-github"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

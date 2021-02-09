@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff9fb;
+}
+
+html {
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.navbar {
+  background-color: #4b88a2;
+  /*background-color: transparent;*/
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-brand {
+  color: #fff9fb;
+  /*color: #000000;*/
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #d3d4d9;
+  /*color: #000000;*/
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-brand:hover {
+  color: #fff9fb;
+  /*color: #000000;*/
+}
+
+#home {
+  background: url(../imgs/plz.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.landing-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff9fb;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.padding img {
+  width: 100%;
+}
+
+.fixed {
+  background: url(../imgs/test.jpg) no-repeat center center fixed;
+  display: table;
+  height: 60%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  background-color: #4b88a2;
+  padding: 5% 5% 10% 5%;
+  color: #fff9fb;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #fff9fb;
+}
+
+.fa:hover {
+  color: #fff9fb;
+  text-decoration: none;
+}
