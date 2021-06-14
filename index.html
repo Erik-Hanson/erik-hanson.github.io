@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erik Hanson Portfolio Website</title>
+  <title>Erik Hanson - Welcome</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -63,7 +63,6 @@
   <div id="home">
     <div class="landing-text pt-5">
       <h1 class="display-1">Erik Hanson</h1>
-      <!--<h3 class="display-4">Welcome to my web portfolio!</h3>-->
     </div>
   </div>
 
@@ -71,16 +70,23 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <img src="imgs/coffee.jpg">
+          <img src="imgs/me.JPG" width="600px" height="590px" style="object-fit: cover;">
         </div>
         <div class="col text-center">
           <h2>About Me</h2>
-          <p class="lead">At a high level I'm a guy that likes to make things to make life more easy. I enjoy learning
-            new things and taking on new challenges. Topics I enjoy in computer science/software engineering are, data
-            structures and
-            algorithms, programming languages, databases, fullstack development, docker, and version control. When I'm
-            not programming
-            I enjoy spending my time mountain biking or hiking with my dog Rooster!
+          <p class="lead">
+            Hello! My name is Erik Hanson and I like to build all things software related and take on new and exciting challenges. I am
+            a recent computer science graduate from Portland State University looking for software engineering positions! My love for programming
+            came about when I started to solve logical problems in new ways that I never had using the power of programming. 
+          </p>
+
+          <br />
+
+          <p class="lead">
+            A little about my professional experience is that I have two internships under my belt. My first internship was at Multnomah County as a
+            automation engineer intern. There I was tasked with creating an automated testing framework for a pre-existing web app. My second internship
+            was at a company called Act-On. My role there was fixing bugs and implementing features onto middletiers that the frontend would
+            communicate with.
           </p>
         </div>
       </div>
@@ -90,48 +96,53 @@
   <div class="padding text-center" id="projects">
     <h2>Projects</h2>
     <div class="container pt-2">
-      <div class="row">
-        <div class="col-sm">
-          <h4>WorkSet</h4>
-          <p>A fullstack to-do application that me and my friend worked on. We used HTML, Bootstrap,
-            Javascript, React, and
-            Firebase to complete this project. It does all of the things that you would expect a to-do app to do. This
-            was the first real
-            project I've worked on with another person and it was a fun experience working together with Davis on this
-            project.
-          </p>
+      <div class="row pt-2">
+        <div class="col-sm card mx-2">
+          <div class="pt-2 card-body">
+            <h4>WorkSet</h4>
+            <p class="lead">A fullstack to-do application that me and my friend worked on. We used HTML, Bootstrap,
+              Javascript, React, and
+              Firebase to complete this project. It does all of the things that you would expect a to-do app to do. This
+              was the first real
+              project I've worked on with another person and it was a fun experience working together with Davis on this
+              project.
+            </p>
+            <div>
+              <a href="https://github.com/Erik-Hanson/FS-Final-Project-Erik-Davis" target="_blank" class="fa fa-github"
+                style="color: black;"></a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm">
-          <h4>MTBLogger</h4>
-          <p>A simple web application that I wanted to use for logging
-            information and thoughts I had about specific trails I've ridden. For technologies I used ASP.NET, C#,
-            Entity Framework, and
-            SQL Server. The intention of this project was to introduce me to ASP.NET MVC. For the front end HTML, CSS,
-            Bootstrap, and font-awesome
-            were used.
-          </p>
+        <div class="col-sm card mx-2">
+          <div class="card-body pt-2">
+            <h4>MTBLogger</h4>
+            <p class="lead">A simple web application that I wanted to use for logging
+              information and thoughts I had about specific trails I've ridden. For technologies I used ASP.NET, C#,
+              Entity Framework, and
+              SQL Server. The intention of this project was to introduce me to ASP.NET MVC. For the front end HTML, CSS,
+              Bootstrap, and font-awesome
+              were used.
+            </p>
+            <div>
+              <a href="https://github.com/Erik-Hanson/MTBLogger" target="_blank" class="fa fa-github"
+                style="color: black;"></a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm">
-          <h4>Capstone Project</h4>
-          <p>The goal of this project was to create a data pipeline for CTRAN for their stop data. It was intended to
-            discover potential issues
-            with stop data. This project was done in a group of 8 people me included. I primarly focused on
-            dockerization and automation for this
-            project. I also worked with the logger that we had and early implementation of a checkpoint system we
-            implemented into the project.
-            Technologies we used on this project were Python, Pandas, PostgreSQL, Docker, and Bash.
-          </p>
+        <div class="col-sm border card">
+          <div class="pt-2 card-body">
+            <h4>Capstone Project</h4>
+            <p class="lead">The goal of this project was to create a data pipeline for CTRAN for their stop data. It was
+              intended to
+              discover potential issues
+              with stop data. This project was done in a group of 8 people me included. I primarly focused on
+              dockerization and automation for this
+              project. I also worked with the logger that we had and early implementation of a checkpoint system we
+              implemented into the project.
+              Technologies we used on this project were Python, Pandas, PostgreSQL, Docker, and Bash.
+            </p>
+          </div>
         </div>
-        <!--
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <h4>Arduino Project</h4>
-          <p>I wanted to create a arduno project for the sole premise of getting experience with integrating hardware
-            and code. This is something
-            that we are not typically taught in computer science cirriculum and thus I wanted to gain some knowledge
-            about it on my own time.
-          </p>
-        </div>
-      -->
       </div>
     </div>
   </div>
